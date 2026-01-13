@@ -9,5 +9,5 @@ def get_token():
 def test_create_employee():
     token = get_token()
     res = client.post("/api/employees/", headers={"Authorization": f"Bearer {token}"},
-                      json={"name": "John", "email": "john@test.com"})
+                      json={"name": "Alice1", "email": "alice@test.com"})
     assert res.status_code == 201
